@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+.board{
+    width:  calc(64px * 8);
+    height:  calc(64px * 8);
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+.cell{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cell img { width: 59px;
+    height: 59px;
+    position: relative;
+}
+.black {
+    background-color: deepskyblue;
+}
+.white{
+    background-color: #eed4ac;
+}
+.selected {
+    background-color: brown;
+}
+.avilable{
+    height: 12px;
+    width: 12px;
+    border-radius: 50% ;
+    background-color: #22c022;
+}
+.lost {
+    height: calc(50vh - 60px);
+    padding: 30px;
+    margin-left: 50px;
+    background-color: lightblue;
+}
